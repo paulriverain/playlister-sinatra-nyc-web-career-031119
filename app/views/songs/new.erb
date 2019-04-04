@@ -3,7 +3,7 @@
 <form action="/songs/show" method="post">
 
   <%@genres.each do |genre| %>
-    <%=genre.genre_type%><input type="checkbox" name="genre">
+    <%=genre.genre_type%><input type="checkbox" name="genre"> <!--must add a value=genre.id-->
   <%end%>
 
   <input type="text" name="art_name" placeholder="Artist's name">
